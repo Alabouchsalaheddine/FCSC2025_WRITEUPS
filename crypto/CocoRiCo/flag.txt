@@ -1,0 +1,27 @@
+nc chall.fcsc.fr 2150
+
+(my_env) salaheddinealabouch@Salah-Eddines-MacBook-Pro fcsc_2025 % nc chall.fcsc.fr 2150
+0. Quit
+1. Login
+2. Logout
+3. TODO
+>>> 1
+Are you new ? (y/n) y
+Name: alice
+Welcome alice. Here is your token:
+c368d3700f19c47e1d2a282b3823a7641117c1a7f317fe61ba4385518625fe32bf6e4bf52e
+This challenge is still under active developement, please come back in a few weeks to try it out!
+0. Quit
+1. Login
+2. Logout
+3. TODO
+>>> 1
+Are you new ? (y/n) n
+Token: c368d3700f19c47e1d2a3d28252fe06a1d1582a2fa13f92da259d145922cf07f8282d2
+Congrats! Here is your flag:
+FCSC{56e8ee27c9039b13a2b896da9a95a266cadd9a6e06e6d1f140f3df6cbed6332c}
+0. Quit
+1. Login
+2. Logout
+3. TODO
+>>> 
