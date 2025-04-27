@@ -1,0 +1,273 @@
+(my_env) salaheddinealabouch@Salah-Eddines-MacBook-Pro Analyse mémoire 1-5 % vol -f analyse-memoire. windows.info
+
+Volatility 3 Framework 2.11.0
+usage: volatility [-h] [-c CONFIG] [--parallelism [{processes,threads,off}]] [-e EXTEND]
+                  [-p PLUGIN_DIRS] [-s SYMBOL_DIRS] [-v] [-l LOG] [-o OUTPUT_DIR] [-q] [-r RENDERER]
+                  [-f FILE] [--write-config] [--save-config SAVE_CONFIG] [--clear-cache]
+                  [--cache-path CACHE_PATH] [--offline | -u URL] [--filters FILTERS]
+                  [--hide-columns [HIDE_COLUMNS ...]] [--single-location SINGLE_LOCATION]
+                  [--stackers [STACKERS ...]] [--single-swap-locations [SINGLE_SWAP_LOCATIONS ...]]
+                  {banners.Banners,configwriter.ConfigWriter,frameworkinfo.FrameworkInfo,isfinfo.IsfInfo,layerwriter.LayerWriter,linux.bash.Bash,linux.boottime.Boottime,linux.capabilities.Capabilities,linux.check_afinfo.Check_afinfo,linux.check_creds.Check_creds,linux.check_idt.Check_idt,linux.check_modules.Check_modules,linux.check_syscall.Check_syscall,linux.ebpf.EBPF,linux.elfs.Elfs,linux.envars.Envars,linux.hidden_modules.Hidden_modules,linux.iomem.IOMem,linux.keyboard_notifiers.Keyboard_notifiers,linux.kmsg.Kmsg,linux.kthreads.Kthreads,linux.library_list.LibraryList,linux.lsmod.Lsmod,linux.lsof.Lsof,linux.malfind.Malfind,linux.mountinfo.MountInfo,linux.netfilter.Netfilter,linux.pagecache.Files,linux.pagecache.InodePages,linux.pidhashtable.PIDHashTable,linux.proc.Maps,linux.psaux.PsAux,linux.pslist.PsList,linux.psscan.PsScan,linux.pstree.PsTree,linux.ptrace.Ptrace,linux.sockstat.Sockstat,linux.tty_check.tty_check,mac.bash.Bash,mac.check_syscall.Check_syscall,mac.check_sysctl.Check_sysctl,mac.check_trap_table.Check_trap_table,mac.dmesg.Dmesg,mac.ifconfig.Ifconfig,mac.kauth_listeners.Kauth_listeners,mac.kauth_scopes.Kauth_scopes,mac.kevents.Kevents,mac.list_files.List_Files,mac.lsmod.Lsmod,mac.lsof.Lsof,mac.malfind.Malfind,mac.mount.Mount,mac.netstat.Netstat,mac.proc_maps.Maps,mac.psaux.Psaux,mac.pslist.PsList,mac.pstree.PsTree,mac.socket_filters.Socket_filters,mac.timers.Timers,mac.trustedbsd.Trustedbsd,mac.vfsevents.VFSevents,timeliner.Timeliner,vmscan.Vmscan,windows.amcache.Amcache,windows.bigpools.BigPools,windows.cachedump.Cachedump,windows.callbacks.Callbacks,windows.cmdline.CmdLine,windows.cmdscan.CmdScan,windows.consoles.Consoles,windows.crashinfo.Crashinfo,windows.debugregisters.DebugRegisters,windows.devicetree.DeviceTree,windows.dlllist.DllList,windows.driverirp.DriverIrp,windows.drivermodule.DriverModule,windows.driverscan.DriverScan,windows.dumpfiles.DumpFiles,windows.envars.Envars,windows.filescan.FileScan,windows.getservicesids.GetServiceSIDs,windows.getsids.GetSIDs,windows.handles.Handles,windows.hashdump.Hashdump,windows.hollowprocesses.HollowProcesses,windows.iat.IAT,windows.info.Info,windows.joblinks.JobLinks,windows.kpcrs.KPCRs,windows.ldrmodules.LdrModules,windows.lsadump.Lsadump,windows.malfind.Malfind,windows.mbrscan.MBRScan,windows.memmap.Memmap,windows.modscan.ModScan,windows.modules.Modules,windows.mutantscan.MutantScan,windows.netscan.NetScan,windows.netstat.NetStat,windows.orphan_kernel_threads.Threads,windows.pe_symbols.PESymbols,windows.pedump.PEDump,windows.poolscanner.PoolScanner,windows.privileges.Privs,windows.processghosting.ProcessGhosting,windows.pslist.PsList,windows.psscan.PsScan,windows.pstree.PsTree,windows.psxview.PsXView,windows.registry.certificates.Certificates,windows.registry.getcellroutine.GetCellRoutine,windows.registry.hivelist.HiveList,windows.registry.hivescan.HiveScan,windows.registry.printkey.PrintKey,windows.registry.userassist.UserAssist,windows.scheduled_tasks.ScheduledTasks,windows.sessions.Sessions,windows.shimcachemem.ShimcacheMem,windows.skeleton_key_check.Skeleton_Key_Check,windows.ssdt.SSDT,windows.statistics.Statistics,windows.strings.Strings,windows.suspicious_threads.SuspiciousThreads,windows.svcdiff.SvcDiff,windows.svclist.SvcList,windows.svcscan.SvcScan,windows.symlinkscan.SymlinkScan,windows.thrdscan.ThrdScan,windows.threads.Threads,windows.timers.Timers,windows.truecrypt.Passphrase,windows.unhooked_system_calls.unhooked_system_calls,windows.unloadedmodules.UnloadedModules,windows.vadinfo.VadInfo,windows.vadwalk.VadWalk,windows.verinfo.VerInfo,windows.virtmap.VirtMap}
+                  ...
+volatility: error: File does not exist: /Users/salaheddinealabouch/projects/fcsc_2025/forensics/Analyse mémoire 1-5/analyse-memoire.
+(my_env) salaheddinealabouch@Salah-Eddines-MacBook-Pro Analyse mémoire 1-5 % vol -f analyse-memoire.dmp windows.info
+
+Volatility 3 Framework 2.11.0
+Progress:  100.00		PDB scanning finished                                
+Variable	Value
+
+Kernel Base	0xf80381800000
+DTB	0x1ad000
+Symbols	file:///opt/anaconda3/envs/my_env/lib/python3.10/site-packages/volatility3/symbols/windows/ntkrnlmp.pdb/F964C6AEED00BF435F1A3C883896FE68-1.json.xz
+Is64Bit	True
+IsPAE	False
+layer_name	0 WindowsIntel32e
+memory_layer	1 WindowsCrashDump64Layer
+base_layer	2 FileLayer
+KdVersionBlock	0xf8038240f400
+Major/Minor	15.19041
+MachineType	34404
+KeNumberProcessors	6
+SystemTime	2025-04-01 22:17:18+00:00
+NtSystemRoot	C:\Windows
+NtProductType	NtProductWinNt
+NtMajorVersion	10
+NtMinorVersion	0
+PE MajorOperatingSystemVersion	10
+PE MinorOperatingSystemVersion	0
+PE Machine	34404
+PE TimeDateStamp	Fri Dec 16 15:04:28 2033
+(my_env) salaheddinealabouch@Salah-Eddines-MacBook-Pro Analyse mémoire 1-5 % ls
+analyse-memoire.dmp	analyse-memoire.tar.xz
+(my_env) salaheddinealabouch@Salah-Eddines-MacBook-Pro Analyse mémoire 1-5 % vol -f analyse-memoire.dmp windows.pslist 
+
+Volatility 3 Framework 2.11.0
+Progress:  100.00		PDB scanning finished                                
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	File output
+
+4	0	System	0xa50a1f85d080	178	-	N/A	False	2025-04-01 22:10:38.000000 UTC	N/A	Disabled
+124	4	Registry	0xa50a1f8e1080	4	-	N/A	False	2025-04-01 22:10:34.000000 UTC	N/A	Disabled
+452	4	smss.exe	0xa50a20adc040	2	-	N/A	False	2025-04-01 22:10:38.000000 UTC	N/A	Disabled
+556	544	csrss.exe	0xa50a20adf080	11	-	0	False	2025-04-01 22:10:43.000000 UTC	N/A	Disabled
+656	544	wininit.exe	0xa50a26073080	1	-	0	False	2025-04-01 22:10:43.000000 UTC	N/A	Disabled
+664	648	csrss.exe	0xa50a26076140	13	-	1	False	2025-04-01 22:10:43.000000 UTC	N/A	Disabled
+752	648	winlogon.exe	0xa50a260a6080	3	-	1	False	2025-04-01 22:10:43.000000 UTC	N/A	Disabled
+800	656	services.exe	0xa50a20ade080	5	-	0	False	2025-04-01 22:10:43.000000 UTC	N/A	Disabled
+824	656	lsass.exe	0xa50a260df080	8	-	0	False	2025-04-01 22:10:43.000000 UTC	N/A	Disabled
+936	800	svchost.exe	0xa50a26148240	10	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+960	656	fontdrvhost.ex	0xa50a26149080	5	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+968	752	fontdrvhost.ex	0xa50a26167140	5	-	1	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+508	800	svchost.exe	0xa50a261d62c0	8	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+648	800	svchost.exe	0xa50a26207240	3	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+1040	800	svchost.exe	0xa50a26258280	1	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+1060	800	svchost.exe	0xa50a26276300	3	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+1136	752	LogonUI.exe	0xa50a262cb080	0	-	1	False	2025-04-01 22:10:44.000000 UTC	2025-04-01 22:11:31.000000 UTC	Disabled
+1144	752	dwm.exe	0xa50a262cd080	21	-	1	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+1168	800	svchost.exe	0xa50a262cf300	2	-	0	False	2025-04-01 22:10:44.000000 UTC	N/A	Disabled
+1196	800	svchost.exe	0xa50a262e1240	3	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1220	800	svchost.exe	0xa50a26304300	6	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1348	800	svchost.exe	0xa50a26341240	6	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1356	800	svchost.exe	0xa50a263432c0	4	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1404	800	svchost.exe	0xa50a2634c080	3	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1484	800	svchost.exe	0xa50a26347080	6	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1516	800	svchost.exe	0xa50a263c1240	4	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1576	800	VBoxService.ex	0xa50a263ae2c0	10	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1648	800	svchost.exe	0xa50a27079300	4	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1724	800	svchost.exe	0xa50a270a6280	5	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1732	800	svchost.exe	0xa50a270a82c0	4	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1744	800	svchost.exe	0xa50a270a7080	3	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1800	936	rundll32.exe	0xa50a270b9200	4	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1860	800	svchost.exe	0xa50a270ea240	2	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1868	4	MemCompression	0xa50a270f1040	58	-	N/A	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1936	800	svchost.exe	0xa50a271ca2c0	6	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1956	800	svchost.exe	0xa50a271f02c0	2	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1988	800	svchost.exe	0xa50a271f32c0	4	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2000	800	svchost.exe	0xa50a271f5280	2	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+1944	800	svchost.exe	0xa50a2722a2c0	5	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2228	800	svchost.exe	0xa50a272d3300	3	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2240	800	svchost.exe	0xa50a272d4080	3	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2248	800	svchost.exe	0xa50a272d5080	10	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2256	800	svchost.exe	0xa50a272d82c0	5	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2440	800	svchost.exe	0xa50a2738b240	3	-	0	False	2025-04-01 22:10:45.000000 UTC	N/A	Disabled
+2564	800	spoolsv.exe	0xa50a27421200	7	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2604	800	svchost.exe	0xa50a2742b2c0	14	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2712	800	svchost.exe	0xa50a27442300	5	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2920	800	svchost.exe	0xa50a275262c0	2	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2928	800	svchost.exe	0xa50a2752d080	10	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2940	800	svchost.exe	0xa50a27537080	12	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2948	800	svchost.exe	0xa50a2753a300	8	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2956	800	svchost.exe	0xa50a27538080	1	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2984	800	svchost.exe	0xa50a274c9080	15	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2996	800	svchost.exe	0xa50a274cb080	3	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+3012	800	MpDefenderCore	0xa50a27539080	8	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+3024	800	svchost.exe	0xa50a274d5080	3	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2040	800	MsMpEng.exe	0xa50a27564340	34	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+1816	800	svchost.exe	0xa50a2762e240	4	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+2064	800	svchost.exe	0xa50a2768c240	5	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+3084	800	svchost.exe	0xa50a276a62c0	2	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+3108	800	svchost.exe	0xa50a276ae240	12	-	0	False	2025-04-01 22:10:46.000000 UTC	N/A	Disabled
+3452	800	svchost.exe	0xa50a27775240	2	-	0	False	2025-04-01 22:10:47.000000 UTC	N/A	Disabled
+3696	936	dllhost.exe	0xa50a279402c0	4	-	0	False	2025-04-01 22:10:48.000000 UTC	N/A	Disabled
+3856	800	SearchIndexer.	0xa50a25fb8080	13	-	0	False	2025-04-01 22:10:49.000000 UTC	N/A	Disabled
+3908	800	svchost.exe	0xa50a27baf2c0	4	-	0	False	2025-04-01 22:10:49.000000 UTC	N/A	Disabled
+3172	800	svchost.exe	0xa50a27c08080	4	-	0	False	2025-04-01 22:10:50.000000 UTC	N/A	Disabled
+908	800	svchost.exe	0xa50a2777b240	24	-	0	False	2025-04-01 22:10:50.000000 UTC	N/A	Disabled
+3480	800	svchost.exe	0xa50a27cd8300	1	-	0	False	2025-04-01 22:10:51.000000 UTC	N/A	Disabled
+4316	2928	AggregatorHost	0xa50a1f99b080	3	-	0	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4412	1516	sihost.exe	0xa50a27a162c0	10	-	1	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4452	800	svchost.exe	0xa50a1f977080	5	-	1	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4504	800	svchost.exe	0xa50a1f93a080	5	-	1	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4576	1348	taskhostw.exe	0xa50a1f92b080	8	-	1	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4720	800	svchost.exe	0xa50a2794b280	4	-	0	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4824	752	userinit.exe	0xa50a27d91080	0	-	1	False	2025-04-01 22:10:52.000000 UTC	2025-04-01 22:11:20.000000 UTC	Disabled
+4848	4720	ctfmon.exe	0xa50a27f062c0	13	-	1	False	2025-04-01 22:10:52.000000 UTC	N/A	Disabled
+4960	800	svchost.exe	0xa50a27f1c2c0	7	-	0	False	2025-04-01 22:10:53.000000 UTC	N/A	Disabled
+5036	4824	explorer.exe	0xa50a27f20080	48	-	1	False	2025-04-01 22:10:53.000000 UTC	N/A	Disabled
+5108	800	svchost.exe	0xa50a27fe5300	5	-	0	False	2025-04-01 22:10:53.000000 UTC	N/A	Disabled
+5148	800	svchost.exe	0xa50a29065240	3	-	0	False	2025-04-01 22:10:54.000000 UTC	N/A	Disabled
+5432	800	svchost.exe	0xa50a290670c0	7	-	1	False	2025-04-01 22:10:55.000000 UTC	N/A	Disabled
+6008	936	SearchApp.exe	0xa50a292ad080	16	-	1	False	2025-04-01 22:10:56.000000 UTC	N/A	Disabled
+6136	936	RuntimeBroker.	0xa50a292b3340	9	-	1	False	2025-04-01 22:10:57.000000 UTC	N/A	Disabled
+4644	936	StartMenuExper	0xa50a29358080	9	-	1	False	2025-04-01 22:10:57.000000 UTC	N/A	Disabled
+5352	800	svchost.exe	0xa50a293ed240	1	-	0	False	2025-04-01 22:10:57.000000 UTC	N/A	Disabled
+5456	6008	msedgewebview2	0xa50a293ec080	43	-	1	False	2025-04-01 22:10:57.000000 UTC	N/A	Disabled
+5512	936	RuntimeBroker.	0xa50a294af340	3	-	1	False	2025-04-01 22:10:58.000000 UTC	N/A	Disabled
+5828	800	svchost.exe	0xa50a29607240	9	-	0	False	2025-04-01 22:10:58.000000 UTC	N/A	Disabled
+5936	800	svchost.exe	0xa50a2984e2c0	5	-	1	False	2025-04-01 22:10:58.000000 UTC	N/A	Disabled
+5988	5456	msedgewebview2	0xa50a297ca0c0	12	-	1	False	2025-04-01 22:10:58.000000 UTC	N/A	Disabled
+6376	5456	msedgewebview2	0xa50a2981f080	20	-	1	False	2025-04-01 22:10:59.000000 UTC	N/A	Disabled
+6392	5456	msedgewebview2	0xa50a2978f080	24	-	1	False	2025-04-01 22:10:59.000000 UTC	N/A	Disabled
+6532	5456	msedgewebview2	0xa50a29b020c0	9	-	1	False	2025-04-01 22:11:00.000000 UTC	N/A	Disabled
+6720	936	SearchApp.exe	0xa50a299ba2c0	44	-	1	False	2025-04-01 22:11:00.000000 UTC	N/A	Disabled
+6832	5456	msedgewebview2	0xa50a29bd00c0	16	-	1	False	2025-04-01 22:11:00.000000 UTC	N/A	Disabled
+7184	936	SkypeApp.exe	0xa50a29dc6080	14	-	1	False	2025-04-01 22:11:01.000000 UTC	N/A	Disabled
+7208	936	SkypeBackgroun	0xa50a29dee240	4	-	1	False	2025-04-01 22:11:01.000000 UTC	N/A	Disabled
+7572	936	LockApp.exe	0xa50a2969b080	16	-	1	False	2025-04-01 22:11:03.000000 UTC	N/A	Disabled
+7696	936	RuntimeBroker.	0xa50a29951340	2	-	1	False	2025-04-01 22:11:03.000000 UTC	N/A	Disabled
+7860	800	svchost.exe	0xa50a298b52c0	2	-	0	False	2025-04-01 22:11:04.000000 UTC	N/A	Disabled
+5708	936	RuntimeBroker.	0xa50a29f850c0	3	-	1	False	2025-04-01 22:11:06.000000 UTC	N/A	Disabled
+7660	800	NisSrv.exe	0xa50a29f9d080	3	-	0	False	2025-04-01 22:11:08.000000 UTC	N/A	Disabled
+6116	936	RuntimeBroker.	0xa50a29f9c340	1	-	1	False	2025-04-01 22:11:09.000000 UTC	N/A	Disabled
+7220	936	smartscreen.ex	0xa50a29d7d340	6	-	1	False	2025-04-01 22:11:14.000000 UTC	N/A	Disabled
+8244	5036	SecurityHealth	0xa50a29d7c080	1	-	1	False	2025-04-01 22:11:15.000000 UTC	N/A	Disabled
+8280	800	SecurityHealth	0xa50a29d7e080	7	-	0	False	2025-04-01 22:11:15.000000 UTC	N/A	Disabled
+8376	5036	VBoxTray.exe	0xa50a29d7f080	14	-	1	False	2025-04-01 22:11:15.000000 UTC	N/A	Disabled
+8492	5036	OneDrive.exe	0xa50a296c6080	27	-	1	True	2025-04-01 22:11:16.000000 UTC	N/A	Disabled
+8968	5036	soffice.exe	0xa50a29831300	3	-	1	False	2025-04-01 22:11:34.000000 UTC	N/A	Disabled
+8976	800	svchost.exe	0xa50a299f62c0	11	-	0	False	2025-04-01 22:11:34.000000 UTC	N/A	Disabled
+9048	8968	soffice.bin	0xa50a297e7240	13	-	1	False	2025-04-01 22:11:34.000000 UTC	N/A	Disabled
+9112	800	svchost.exe	0xa50a29e4e080	9	-	0	False	2025-04-01 22:12:52.000000 UTC	N/A	Disabled
+8332	800	svchost.exe	0xa50a29f88080	3	-	0	False	2025-04-01 22:12:52.000000 UTC	N/A	Disabled
+1440	800	svchost.exe	0xa50a27673080	8	-	0	False	2025-04-01 22:12:53.000000 UTC	N/A	Disabled
+5408	5036	msedge.exe	0xa50a20ee3340	28	-	1	False	2025-04-01 22:13:41.000000 UTC	N/A	Disabled
+6908	5408	msedge.exe	0xa50a29b2c340	8	-	1	False	2025-04-01 22:13:41.000000 UTC	N/A	Disabled
+7240	5408	msedge.exe	0xa50a272bf080	11	-	1	False	2025-04-01 22:13:42.000000 UTC	N/A	Disabled
+7232	5408	msedge.exe	0xa50a276f20c0	14	-	1	False	2025-04-01 22:13:42.000000 UTC	N/A	Disabled
+4920	5408	msedge.exe	0xa50a20e640c0	7	-	1	False	2025-04-01 22:13:42.000000 UTC	N/A	Disabled
+7532	5408	msedge.exe	0xa50a204bf0c0	15	-	1	False	2025-04-01 22:13:42.000000 UTC	N/A	Disabled
+4732	5408	msedge.exe	0xa50a29b230c0	16	-	1	False	2025-04-01 22:13:42.000000 UTC	N/A	Disabled
+2848	936	TextInputHost.	0xa50a20e6a080	11	-	1	False	2025-04-01 22:13:43.000000 UTC	N/A	Disabled
+7424	800	svchost.exe	0xa50a29e48080	1	-	0	False	2025-04-01 22:13:56.000000 UTC	N/A	Disabled
+2624	5408	msedge.exe	0xa50a20628080	15	-	1	False	2025-04-01 22:14:06.000000 UTC	N/A	Disabled
+3560	5408	msedge.exe	0xa50a20ab9080	14	-	1	False	2025-04-01 22:14:07.000000 UTC	N/A	Disabled
+7832	936	WinStore.App.e	0xa50a20fca080	12	-	1	False	2025-04-01 22:14:33.000000 UTC	N/A	Disabled
+4516	936	ApplicationFra	0xa50a2982c080	4	-	1	False	2025-04-01 22:14:33.000000 UTC	N/A	Disabled
+7216	936	RuntimeBroker.	0xa50a299062c0	4	-	1	False	2025-04-01 22:14:35.000000 UTC	N/A	Disabled
+5188	936	SystemSettings	0xa50a20ab2300	20	-	1	False	2025-04-01 22:14:46.000000 UTC	N/A	Disabled
+5404	936	UserOOBEBroker	0xa50a291d70c0	4	-	1	False	2025-04-01 22:14:47.000000 UTC	N/A	Disabled
+3020	936	WmiPrvSE.exe	0xa50a296c2080	5	-	0	False	2025-04-01 22:14:55.000000 UTC	N/A	Disabled
+8652	936	dllhost.exe	0xa50a274aa080	8	-	1	False	2025-04-01 22:15:13.000000 UTC	N/A	Disabled
+3132	5036	powershell.exe	0xa50a2906c080	12	-	1	False	2025-04-01 22:15:17.000000 UTC	N/A	Disabled
+3968	3132	conhost.exe	0xa50a20630080	4	-	1	False	2025-04-01 22:15:17.000000 UTC	N/A	Disabled
+5896	3132	DumpIt.exe	0xa50a20ac0080	6	-	1	False	2025-04-01 22:17:14.000000 UTC	N/A	Disabled
+9084	936	WmiPrvSE.exe	0xa50a25a82080	10	-	0	False	2025-04-01 22:17:18.000000 UTC	N/A	Disabled
+(my_env) salaheddinealabouch@Salah-Eddines-MacBook-Pro Analyse mémoire 1-5 % vol -f analyse-memoire.dmp windows.netscan 
+
+Volatility 3 Framework 2.11.0
+Progress:  100.00		PDB scanning finished                                
+Offset	Proto	LocalAddr	LocalPort	ForeignAddr	ForeignPort	State	PID	Owner	Created
+
+0xa50a206ba8a0	TCPv4	10.0.2.15	65480	185.231.164.136	443	CLOSED	7232	msedge.exe	2025-04-01 22:14:07.000000 UTC
+0xa50a20a31910	TCPv4	0.0.0.0	7680	0.0.0.0	0	LISTENING	9112	svchost.exe	2025-04-01 22:12:52.000000 UTC
+0xa50a20a31910	TCPv6	::	7680	::	0	LISTENING	9112	svchost.exe	2025-04-01 22:12:52.000000 UTC
+0xa50a20b39010	TCPv4	10.0.2.15	49701	13.107.246.254	443	CLOSE_WAIT	6720	SearchApp.exe	2025-04-01 22:11:02.000000 UTC
+0xa50a20e66a20	TCPv4	10.0.2.15	51497	150.171.28.12	443	CLOSED	7232	msedge.exe	2025-04-01 22:13:43.000000 UTC
+0xa50a20ef5a90	TCPv4	10.0.2.15	59260	13.107.138.254	443	CLOSED	6720	SearchApp.exe	2025-04-01 22:15:17.000000 UTC
+0xa50a240688a0	TCPv4	10.0.2.15	62866	204.79.197.219	443	CLOSED	7232	msedge.exe	2025-04-01 22:13:52.000000 UTC
+0xa50a25b5e310	TCPv4	0.0.0.0	49665	0.0.0.0	0	LISTENING	656	wininit.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5e310	TCPv6	::	49665	::	0	LISTENING	656	wininit.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5e5d0	TCPv4	10.0.2.15	139	0.0.0.0	0	LISTENING	4	System	2025-04-01 22:10:45.000000 UTC
+0xa50a25b5e890	TCPv4	0.0.0.0	49664	0.0.0.0	0	LISTENING	824	lsass.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5e890	TCPv6	::	49664	::	0	LISTENING	824	lsass.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5eb50	TCPv4	0.0.0.0	135	0.0.0.0	0	LISTENING	508	svchost.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5eb50	TCPv6	::	135	::	0	LISTENING	508	svchost.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5ecb0	TCPv4	0.0.0.0	49667	0.0.0.0	0	LISTENING	1348	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a25b5f0d0	TCPv4	0.0.0.0	49665	0.0.0.0	0	LISTENING	656	wininit.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5f390	TCPv4	0.0.0.0	49666	0.0.0.0	0	LISTENING	1220	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a25b5f910	TCPv4	0.0.0.0	49666	0.0.0.0	0	LISTENING	1220	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a25b5f910	TCPv6	::	49666	::	0	LISTENING	1220	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a25b5fd30	TCPv4	0.0.0.0	49664	0.0.0.0	0	LISTENING	824	lsass.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a25b5fe90	TCPv4	0.0.0.0	135	0.0.0.0	0	LISTENING	508	svchost.exe	2025-04-01 22:10:44.000000 UTC
+0xa50a263fe890	TCPv4	0.0.0.0	49671	0.0.0.0	0	LISTENING	800	services.exe	2025-04-01 22:10:47.000000 UTC
+0xa50a263fecb0	TCPv4	0.0.0.0	49668	0.0.0.0	0	LISTENING	2564	spoolsv.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a263ff0d0	TCPv4	0.0.0.0	49671	0.0.0.0	0	LISTENING	800	services.exe	2025-04-01 22:10:47.000000 UTC
+0xa50a263ff0d0	TCPv6	::	49671	::	0	LISTENING	800	services.exe	2025-04-01 22:10:47.000000 UTC
+0xa50a263ff390	TCPv4	0.0.0.0	5040	0.0.0.0	0	LISTENING	4960	svchost.exe	2025-04-01 22:10:54.000000 UTC
+0xa50a263ff650	TCPv4	0.0.0.0	445	0.0.0.0	0	LISTENING	4	System	2025-04-01 22:10:47.000000 UTC
+0xa50a263ff650	TCPv6	::	445	::	0	LISTENING	4	System	2025-04-01 22:10:47.000000 UTC
+0xa50a263ffd30	TCPv4	0.0.0.0	49667	0.0.0.0	0	LISTENING	1348	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a263ffd30	TCPv6	::	49667	::	0	LISTENING	1348	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a263ffe90	TCPv4	0.0.0.0	49668	0.0.0.0	0	LISTENING	2564	spoolsv.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a263ffe90	TCPv6	::	49668	::	0	LISTENING	2564	spoolsv.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a2703f420	UDPv4	10.0.2.15	138	*	0		4	System	2025-04-01 22:10:45.000000 UTC
+0xa50a2703f5b0	UDPv4	10.0.2.15	137	*	0		4	System	2025-04-01 22:10:45.000000 UTC
+0xa50a27217ce0	UDPv4	0.0.0.0	5353	*	0		2248	svchost.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a27217ce0	UDPv6	::	5353	*	0		2248	svchost.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a27218af0	UDPv4	0.0.0.0	0	*	0		2248	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a27218af0	UDPv6	::	0	*	0		2248	svchost.exe	2025-04-01 22:10:45.000000 UTC
+0xa50a273d5b80	UDPv4	0.0.0.0	5355	*	0		2248	svchost.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a273d5b80	UDPv6	::	5355	*	0		2248	svchost.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a273d7160	UDPv4	0.0.0.0	5353	*	0		2248	svchost.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a273d7ac0	UDPv4	0.0.0.0	5355	*	0		2248	svchost.exe	2025-04-01 22:10:46.000000 UTC
+0xa50a27528a30	TCPv4	10.0.2.15	49707	4.231.68.226	443	CLOSED	7220	smartscreen.ex	2025-04-01 22:11:15.000000 UTC
+0xa50a2752fab0	TCPv4	10.0.2.15	49683	20.199.120.182	443	ESTABLISHED	3024	svchost.exe	2025-04-01 22:10:54.000000 UTC
+0xa50a276e5ba0	UDPv4	127.0.0.1	65416	*	0		2064	svchost.exe	2025-04-01 22:10:47.000000 UTC
+0xa50a2791e010	TCPv4	10.0.2.15	59256	2.22.251.7	443	CLOSE_WAIT	6720	SearchApp.exe	2025-04-01 22:15:13.000000 UTC
+0xa50a27a3f010	TCPv4	10.0.2.15	59259	131.253.33.254	443	CLOSED	6720	SearchApp.exe	2025-04-01 22:15:17.000000 UTC
+0xa50a27b6a660	TCPv4	10.0.2.15	59257	204.79.197.222	443	CLOSED	6720	SearchApp.exe	2025-04-01 22:15:15.000000 UTC
+0xa50a27bdd460	TCPv4	10.0.2.15	59261	48.209.108.37	443	ESTABLISHED	2040	MsMpEng.exe	2025-04-01 22:17:19.000000 UTC
+0xa50a27dcbd30	UDPv4	0.0.0.0	5050	*	0		4960	svchost.exe	2025-04-01 22:10:53.000000 UTC
+0xa50a29071730	TCPv4	10.0.2.15	65014	20.190.160.67	443	CLOSED	7232	msedge.exe	2025-04-01 22:13:53.000000 UTC
+0xa50a296962c0	TCPv4	10.0.2.15	51477	204.79.197.219	443	CLOSED	7232	msedge.exe	2025-04-01 22:13:52.000000 UTC
+0xa50a297956f0	TCPv4	10.0.2.15	52503	91.199.221.3	80	CLOSED	5408	msedge.exe	2025-04-01 22:14:07.000000 UTC
+0xa50a297cd270	TCPv4	10.0.2.15	58828	185.89.210.248	443	ESTABLISHED	7232	msedge.exe	2025-04-01 22:13:46.000000 UTC
+0xa50a2988aa70	TCPv4	10.0.2.15	49745	199.232.210.172	80	CLOSED	2948	svchost.exe	2025-04-01 22:13:27.000000 UTC
+0xa50a299804a0	TCPv4	10.0.2.15	49743	52.177.176.186	443	CLOSED	9112	svchost.exe	2025-04-01 22:12:55.000000 UTC
+0xa50a29a37520	TCPv4	10.0.2.15	57919	185.89.208.19	443	CLOSE_WAIT	7232	msedge.exe	2025-04-01 22:13:46.000000 UTC
+0xa50a29bd1a20	TCPv4	10.0.2.15	59258	52.108.8.254	443	CLOSED	6720	SearchApp.exe	2025-04-01 22:15:17.000000 UTC
+0xa50a29c1fa20	TCPv4	10.0.2.15	49690	150.171.27.12	443	CLOSED	6008	SearchApp.exe	2025-04-01 22:11:00.000000 UTC
+0xa50a29e5fa20	TCPv4	10.0.2.15	49718	2.21.146.43	443	CLOSED	9112	svchost.exe	2025-04-01 22:12:54.000000 UTC
+0xa50a29eaea60	TCPv4	10.0.2.15	49709	100.68.20.103	443	ESTABLISHED	1800	rundll32.exe	2025-04-01 22:11:15.000000 UTC
+0xa50a29f8b2a0	TCPv4	10.0.2.15	57158	35.214.168.80	443	ESTABLISHED	7232	msedge.exe	2025-04-01 22:13:47.000000 UTC
+0xa50a2a0d6ae0	TCPv4	10.0.2.15	65055	52.222.169.27	443	CLOSE_WAIT	7232	msedge.exe	2025-04-01 22:13:43.000000 UTC
+0xa50a2a43dc20	UDPv4	0.0.0.0	0	*	0		1576	VBoxService.ex	2025-04-01 22:16:56.000000 UTC
+0xa50a2a572740	UDPv4	0.0.0.0	0	*	0		1576	VBoxService.ex	2025-04-01 22:17:34.000000 UTC
+0xa50a2a8a6a90	UDPv4	0.0.0.0	5353	*	0		5408	msedge.exe	2025-04-01 22:13:56.000000 UTC
+0xa50a2a8a8520	UDPv4	0.0.0.0	5353	*	0		5408	msedge.exe	2025-04-01 22:13:56.000000 UTC
+0xa50a2a8a8520	UDPv6	::	5353	*	0		5408	msedge.exe	2025-04-01 22:13:56.000000 UTC
+0xa50a2a8bf130	UDPv4	0.0.0.0	60881	*	0		7232	msedge.exe	2025-04-01 22:14:09.000000 UTC
+0xa50a2aa3a3e0	UDPv4	0.0.0.0	62457	*	0		7232	msedge.exe	2025-04-01 22:17:46.000000 UTC
+0xa50a2aa9a100	UDPv4	127.0.0.1	60427	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9aa60	UDPv6	fe80::9198:7402:b43b:f2ea	60424	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9b0a0	UDPv4	10.0.2.15	60426	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9b230	UDPv6	fe80::9198:7402:b43b:f2ea	1900	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9c810	UDPv4	0.0.0.0	49674	*	0		6376	msedgewebview2	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9cb30	UDPv6	::1	60425	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9d490	UDPv4	127.0.0.1	1900	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9e2a0	UDPv4	0.0.0.0	58213	*	0		6376	msedgewebview2	2025-04-01 22:17:59.000000 UTC
+0xa50a2aa9ea70	UDPv4	10.0.2.15	1900	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aaa0050	UDPv6	::1	1900	*	0		-	-	2025-04-01 22:17:59.000000 UTC
+0xa50a2aaa0690	UDPv4	0.0.0.0	63395	*	0		6376	msedgewebview2	2025-04-01 22:18:00.000000 UTC
+0xa50a2aaa3570	UDPv4	0.0.0.0	65291	*	0		7232	msedge.exe	2025-04-01 22:18:06.000000 UTC
+0xa50a2aaa3570	UDPv6	::	65291	*	0		7232	msedge.exe	2025-04-01 22:18:06.000000 UTC
+0xa50a2aaa4380	UDPv4	0.0.0.0	54720	*	0		6376	msedgewebview2	2025-04-01 22:18:02.000000 UTC
