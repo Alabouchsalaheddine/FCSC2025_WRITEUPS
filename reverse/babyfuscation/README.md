@@ -1,7 +1,5 @@
 # babyfuscation
 
-A (very) slightly obfuscated reverse challenge!
-
 ## Challenge Statement
 
 A (very) slightly obfuscated reverse challenge!
