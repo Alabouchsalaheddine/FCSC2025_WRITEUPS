@@ -1,0 +1,7 @@
+FCSC{<nom du logiciel>:<nom du document>}
+FCSC{calc.exe:Mes comptes 2025.txt}
+
+<nom du logiciel> est le nom de l'exécutable du logiciel d'édition
+<nom du document> est le nom du document en cours d'édition par l'utilisateur (sans le chemin du fichier).
+Flag ==>
+FCSC{soffice.exe:[SECRET-SF][TLP-RED]Plan FCSC 2026.odt}
