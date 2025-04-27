@@ -1,0 +1,26 @@
+python solution.py 
+[+] Opening connection to chall.fcsc.fr on port 2050: Done
+We randomize arrays A of integers. For each of them, find the subarray A[i:j] with maximal sum.
+(seed, n, N) = (96767232, 10, 4)
+(seed, n, N) = (322363803, 10, 4)
+(seed, n, N) = (344709246, 10, 4)
+(seed, n, N) = (1130323061, 100, 6)
+(seed, n, N) = (3361887072, 100, 6)
+(seed, n, N) = (3212641542, 100, 6)
+(seed, n, N) = (2688822243, 500, 8)
+(seed, n, N) = (3309786227, 500, 8)
+(seed, n, N) = (4146215510, 500, 8)
+(seed, n, N) = (2525879027, 1000, 11)
+(seed, n, N) = (3872044534, 1000, 11)
+(seed, n, N) = (1309325305, 1000, 11)
+(seed, n, N) = (3621076961, 10000, 16)
+(seed, n, N) = (1213497512, 10000, 16)
+(seed, n, N) = (705683102, 10000, 16)
+(seed, n, N) = (322457028, 20000, 20)
+(seed, n, N) = (1059393939, 20000, 20)
+(seed, n, N) = (48685260, 20000, 20)
+(seed, n, N) = (1491147486, 50000, 21)
+(seed, n, N) = (4286206669, 100000, 22)
+FCSC{b3a6e5e45a7efcbefe1757d689ad20c1b1ff886eced11b87b74bb25175efad05}
+[+] Connection closed
+[*] Closed connection to chall.fcsc.fr port 2050
