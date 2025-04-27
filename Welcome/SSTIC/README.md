@@ -28,7 +28,7 @@ FCSC{
 
 This search revealed the hidden flag.
 
-![Flag found in Discord announcement](image.png)
+![Flag found in PDF file](image.png)
 
 ---
 
