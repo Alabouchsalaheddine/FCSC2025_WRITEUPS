@@ -21,7 +21,7 @@ By joining the FCSC Discord server and checking the `#annonces` channel, we find
 
 Here’s a screenshot showing the message:
 
-![Flag found in Discord announcement](Screenshot 2025-04-18 at 23.13.15.png)
+![Flag found in Discord announcement](image.png)
 
 ---
 
